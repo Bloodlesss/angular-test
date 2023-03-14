@@ -1,0 +1,68 @@
+/* You can add global styles to this file, and also import other style files */
+$gradient-start: #665fee;
+$gradient-end: #27c2de;
+
+$gradient: linear-gradient(45deg, $gradient-start 0%, $gradient-end 100%);
+$selected-color: #1e90ff;
+$contrast-color: white; // set a contrasting text color, white in this case
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1vh;
+  align-items: center;
+
+  .progress-bar {
+    width: -webkit-fill-available;
+  }
+}
+
+.form {
+  @extend .flex-column;
+  justify-content: center;
+  align-items: center;
+
+  .form-container {
+    background-color: white;
+    @extend .flex-column;
+    border: 1px solid lightgrey;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 15px 15px 15px;
+    border-radius: 20px;
+    row-gap: 3vh;
+  }
+}
+
+.p-datatable .p-datatable-thead>tr>th {
+  border: none !important;
+}
+
+.p-datatable .p-datatable-tbody>tr>td {
+  border: none !important;
+}
+
+.p-multiselect,
+.p-dropdown,
+.p-inputtext {
+  width: 197px
+}
+
+.p-datatable>.p-datatable-wrapper {
+  overflow: hidden !important;
+  min-height: 200px !important;
+}

@@ -1,0 +1,25 @@
+@import '../../../styles.scss';
+
+:host {
+  @extend .flex-column;
+  row-gap: 5vh;
+}
+
+.body {
+  @extend .flex-column;
+  row-gap: 5vh;
+  margin: -10px;
+
+  .order-forms {
+    @extend .flex-row;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .table-Container {
+    @extend .flex-column;
+    justify-content: center;
+    align-items: center;
+  }
+}

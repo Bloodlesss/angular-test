@@ -1,0 +1,10 @@
+@import '../../../styles.scss';
+
+:host {
+  @extend .flex-column;
+  row-gap: 3vh;
+}
+
+.table {
+  margin: -10px;
+}
